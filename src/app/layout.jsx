@@ -15,8 +15,8 @@ export default function RootLayout({
   children,
 }) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${outfit.variable} antialiased font-sans flex flex-col min-h-screen text-foreground`}>
+    <html lang="en" className="dark" suppressHydrationWarning>
+      <body className={`${outfit.variable} antialiased font-sans flex flex-col min-h-screen text-foreground`} suppressHydrationWarning>
         {children}
       </body>
     </html>
